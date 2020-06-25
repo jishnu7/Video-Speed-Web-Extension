@@ -1,0 +1,30 @@
+{
+  "name": "Video Speed",
+  "description": "Control video playback speed in websites",
+  "version": "0.1",
+  "permissions": [
+    "<all_urls>",
+    "storage"
+  ],
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [ "src/content.js" ],
+      "css" : ["src/speed.css"]
+    }
+  ],
+  "background": {
+    "scripts": ["src/background.js"]
+  },
+  "browser_action": {
+    "default_title": "Control video playback speed",
+    "default_icon": "icons/icon.svg",
+    "default_popup": "src/popup.html"
+  },
+  "manifest_version": 2
+}
