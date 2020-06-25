@@ -18,3 +18,6 @@ youtube, instagram, twitter, almost all websites which is using HTML5 video.
 
 ## Firefox Android
 - web-ext run --target=firefox-android --android-device FA4AX0201736
+
+# Attribution
+- Icon: [speed by Fahmi from the Noun Project]( https://thenounproject.com/term/speed/2707398)
